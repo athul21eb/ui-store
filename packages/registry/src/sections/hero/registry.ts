@@ -78,5 +78,5 @@ export const heroFullWidthRegistry: RegistryItem<HeroFullWidthProps> = {
 export const heroRegistry = {
   centered: heroCenteredRegistry,
   split: heroSplitRegistry,
-  fullwidth: heroFullWidthRegistry,
+  fullWidth: heroFullWidthRegistry,
 };

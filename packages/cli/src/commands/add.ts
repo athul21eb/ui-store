@@ -11,7 +11,7 @@ import path from "path";
 const SECTIONS_REGISTRY = {
   hero: {
     name: 'hero',
-    variants: ['centered', 'split', 'fullwidth'],
+    variants: ['centered', 'split', 'fullWidth'],
     description: 'Hero sections for landing pages',
     dependencies: [],
   },
