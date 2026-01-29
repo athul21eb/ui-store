@@ -8,7 +8,6 @@ export const HeroSplit: React.FC<HeroSplitProps> = ({
   imageUrl,
   imageAlt,
   imagePosition = "right",
-  reverse = false,
   className = "",
   theme = "light",
 }) => {
@@ -17,8 +16,9 @@ export const HeroSplit: React.FC<HeroSplitProps> = ({
     dark: "bg-gray-900 text-white",
   };
 
-  const contentOrder = reverse ? "order-2" : "order-1";
-  const imageOrder = reverse ? "order-1" : "order-2";
+  // Use imagePosition to determine layout order
+  const contentOrder = imagePosition === "right" ? "order-1" : "order-2";
+  const imageOrder = imagePosition === "right" ? "order-2" : "order-1";
 
   return (
     <section className={`min-h-screen ${themeClasses[theme]} ${className}`}>
