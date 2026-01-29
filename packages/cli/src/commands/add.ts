@@ -10,33 +10,33 @@ import path from "path";
 // Registry metadata (in production, this would be imported from registry package)
 const SECTIONS_REGISTRY = {
   hero: {
-    name: "hero",
-    variants: ["centered", "split", "fullWidth"],
-    description: "Hero sections for landing pages",
+    name: 'hero',
+    variants: ['centered', 'split', 'fullwidth'],
+    description: 'Hero sections for landing pages',
     dependencies: [],
   },
   about: {
-    name: "about",
-    variants: ["textHeavy", "imageFocused", "values"],
-    description: "About sections",
+    name: 'about',
+    variants: ['textHeavy', 'imageFocused', 'values'],
+    description: 'About sections',
     dependencies: [],
   },
   contact: {
-    name: "contact",
-    variants: ["simple", "withInfo", "cta"],
-    description: "Contact sections with forms",
+    name: 'contact',
+    variants: ['simple', 'withInfo', 'cta'],
+    description: 'Contact sections with forms',
     dependencies: [],
   },
   booking: {
-    name: "booking",
-    variants: ["minimal", "dateFocused", "withInfo"],
-    description: "Booking and reservation sections",
+    name: 'booking',
+    variants: ['minimal', 'dateFocused', 'withInfo'],
+    description: 'Booking and reservation sections',
     dependencies: [],
   },
   footer: {
-    name: "footer",
-    variants: ["minimal", "multiColumn", "newsletter"],
-    description: "Footer sections",
+    name: 'footer',
+    variants: ['minimal', 'multiColumn', 'newsletter'],
+    description: 'Footer sections',
     dependencies: [],
   },
 };

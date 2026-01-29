@@ -17,18 +17,23 @@ export { contactRegistry, contactMeta } from './sections/contact/registry';
 export * from './sections/booking';
 export { bookingRegistry, bookingMeta } from './sections/booking/registry';
 
-// Registry map
+// Export Footer section
+export * from './sections/footer';
+export { footerRegistry, footerMeta } from './sections/footer/registry';
+
+// Registry map - COMPLETE!
 import { heroRegistry } from './sections/hero/registry';
 import { aboutRegistry } from './sections/about/registry';
 import { contactRegistry } from './sections/contact/registry';
 import { bookingRegistry } from './sections/booking/registry';
+import { footerRegistry } from './sections/footer/registry';
 
 export const registry = {
   hero: heroRegistry,
   about: aboutRegistry,
   contact: contactRegistry,
   booking: bookingRegistry,
-  // footer: footerRegistry,    // Coming next!
+  footer: footerRegistry,
 };
 
 // Helper function to get all sections
