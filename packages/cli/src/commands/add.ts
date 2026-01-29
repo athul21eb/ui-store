@@ -7,37 +7,46 @@ import { copyAllVariants, ensureDependencies } from "../utils/fileManager";
 import fs from "fs-extra";
 import path from "path";
 
-// Registry metadata (in production, this would be imported from registry package)
+// Import registry metadata from the registry package (metadata only, no components)
+import {
+  heroMeta,
+  aboutMeta,
+  contactMeta,
+  bookingMeta,
+  footerMeta,
+} from "@ui-registry/components/dist/metadata";
+
+// Build sections registry from imported metadata
 const SECTIONS_REGISTRY = {
   hero: {
-    name: 'hero',
-    variants: ['centered', 'split', 'fullWidth'],
-    description: 'Hero sections for landing pages',
-    dependencies: [],
+    name: heroMeta.name,
+    variants: heroMeta.variants,
+    description: heroMeta.description,
+    dependencies: heroMeta.dependencies || [],
   },
   about: {
-    name: 'about',
-    variants: ['textHeavy', 'imageFocused', 'values'],
-    description: 'About sections',
-    dependencies: [],
+    name: aboutMeta.name,
+    variants: aboutMeta.variants,
+    description: aboutMeta.description,
+    dependencies: aboutMeta.dependencies || [],
   },
   contact: {
-    name: 'contact',
-    variants: ['simple', 'withInfo', 'cta'],
-    description: 'Contact sections with forms',
-    dependencies: [],
+    name: contactMeta.name,
+    variants: contactMeta.variants,
+    description: contactMeta.description,
+    dependencies: contactMeta.dependencies || [],
   },
   booking: {
-    name: 'booking',
-    variants: ['minimal', 'dateFocused', 'withInfo'],
-    description: 'Booking and reservation sections',
-    dependencies: [],
+    name: bookingMeta.name,
+    variants: bookingMeta.variants,
+    description: bookingMeta.description,
+    dependencies: bookingMeta.dependencies || [],
   },
   footer: {
-    name: 'footer',
-    variants: ['minimal', 'multiColumn', 'newsletter'],
-    description: 'Footer sections',
-    dependencies: [],
+    name: footerMeta.name,
+    variants: footerMeta.variants,
+    description: footerMeta.description,
+    dependencies: footerMeta.dependencies || [],
   },
 };
 

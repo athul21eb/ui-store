@@ -1,5 +1,5 @@
 {
-  "name": "@ui-store/components",
+  "name": "@ui-registry/components",
   "version": "1.0.0",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -8,5 +8,9 @@
   },
   "peerDependencies": {
     "react": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "typescript": "^5.3.3"
   }
 }
